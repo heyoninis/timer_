@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teste</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,24 +12,26 @@
 
     <div id="content">
 
+        <div id="showName"></div>
         <div id="countdown"></div>
 
         <div id="timer">
+
+            <input class="inputName" type="text" id="nameInput" placeholder="Name your timer">
+
             <form class="inputs">
                 <input class="inputTimer" type="number" id="minutesInput" placeholder="Minutos" min="0" step="1">
-                <input class="inputTimer" type="number" id="secondsInput" placeholder="Segundos" min="0" max="59" step="1">
+                <input class="inputTimer" type="number" id="secondsInput" placeholder="Segundos" min="0" max="59"
+                    step="1">
             </form>
             <button id="saveInfo" onclick="saveInfo()"> Salvar </button>
 
         </div>
-        <button id="startButton" >Iniciar Contagem Regressiva</button>
+        <button id="startButton">Iniciar Contagem Regressiva</button>
         <button id="backButton" onclick="Back()">Voltar</button>
         <button id="redoButton" onclick="redo()">Redo</button>
 
     </div>
-
-
-
 
 
     <script src="singleOnes.js"></script>
